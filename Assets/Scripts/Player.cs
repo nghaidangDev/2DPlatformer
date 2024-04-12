@@ -15,16 +15,21 @@ public class Player : MonoBehaviour
     private Animator anim;
     private float horizontal;
 
+    private Vector3 respawnPoint;
+    public GameObject deadZone;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        respawnPoint = transform.position;
     }
 
     private void Update()
     {
         PlayerMovement();
         Jump();
+        MoveDeadZone();
     }
 
     public void PlayerMovement()
@@ -62,5 +67,22 @@ public class Player : MonoBehaviour
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.5f, groundLayer);
+    }
+
+    public void MoveDeadZone()
+    {
+        deadZone.transform.position = new Vector2(transform.position.x, deadZone.transform.position.y);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DeadZone"))
+        {
+            transform.position = respawnPoint;
+        }
+        else if (collision.CompareTag("CheckPoint"))
+        {
+            respawnPoint = transform.position;
+        }
     }
 }
