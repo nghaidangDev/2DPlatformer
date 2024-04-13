@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
 
     public Text scoreTxt;
 
+    public HealthBar healthBar;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -104,6 +106,14 @@ public class Player : MonoBehaviour
             Scoring.totalScore += 1;
             scoreTxt.text = "Score: " + Scoring.totalScore;
             collision.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Traps"))
+        {
+            healthBar.Damage(0.002f);
         }
     }
 }

@@ -3295,9 +3295,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1171098802}
   - component: {fileID: 1171098803}
+  - component: {fileID: 1171098804}
   m_Layer: 6
   m_Name: Spike_03
-  m_TagString: Untagged
+  m_TagString: Traps
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3369,6 +3370,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1171098804
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171098801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.000000029802322}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.8, y: 1.1428397}
+  m_EdgeRadius: 0
 --- !u!1 &1242150185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +5379,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 83874709}
     - target: {fileID: 2245938821662219599, guid: dd09ca3619f91154fb134d339524d41a, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1678756775541560388}
+    - target: {fileID: 2245938821662219599, guid: dd09ca3619f91154fb134d339524d41a, type: 3}
       propertyPath: previosLevel
       value: 
       objectReference: {fileID: 643804475}
@@ -5482,6 +5532,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fe47e50c1e712741ba003a9cf4cc887, type: 3}
+--- !u!114 &1678756775541560388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2290883726658750093, guid: 5fe47e50c1e712741ba003a9cf4cc887, type: 3}
+  m_PrefabInstance: {fileID: 1678756775541560387}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33445e80a5fe64240b5f41815f9b9c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4140162067226201708
 Transform:
   m_ObjectHideFlags: 0

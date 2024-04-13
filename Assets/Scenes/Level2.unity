@@ -749,6 +749,10 @@ PrefabInstance:
       propertyPath: scoreTxt
       value: 
       objectReference: {fileID: 1817604467}
+    - target: {fileID: 2245938821662219599, guid: dd09ca3619f91154fb134d339524d41a, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1817604468}
     - target: {fileID: 5257433565231850552, guid: dd09ca3619f91154fb134d339524d41a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1371,6 +1375,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1817604468 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2290883726658750093, guid: 5fe47e50c1e712741ba003a9cf4cc887, type: 3}
+  m_PrefabInstance: {fileID: 1817604466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33445e80a5fe64240b5f41815f9b9c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1931725516
