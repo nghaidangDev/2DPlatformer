@@ -7,6 +7,9 @@ TagManager:
   - Ladder
   - DeadZone
   - CheckPoint
+  - NextLevel
+  - PreviosLevel
+  - Items
   layers:
   - Default
   - TransparentFX

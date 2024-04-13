@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class Player : MonoBehaviour
 
     private Vector3 respawnPoint;
     public GameObject deadZone;
+
+    public Text scoreTxt;
 
     private void Start()
     {
@@ -83,6 +87,24 @@ public class Player : MonoBehaviour
         else if (collision.CompareTag("CheckPoint"))
         {
             respawnPoint = transform.position;
+        }
+        else if (collision.CompareTag("NextLevel"))
+        {
+            SceneManager.LoadScene(1);
+            respawnPoint = transform.position;
+            scoreTxt.text = "Score: " + Scoring.totalScore;
+        }
+        else if (collision.CompareTag("PreviosLevel"))
+        {
+            SceneManager.LoadScene(0);
+            respawnPoint = transform.position;
+            scoreTxt.text = "Score: " + Scoring.totalScore;
+        }
+        else if (collision.CompareTag("Items"))
+        {
+            Scoring.totalScore += 1;
+            scoreTxt.text = "Score: " + Scoring.totalScore;
+            collision.gameObject.SetActive(false);
         }
     }
 }

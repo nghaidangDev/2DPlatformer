@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8714536924079048609}
   - component: {fileID: 7907729803160850455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassDown_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3638199737965377938}
   - component: {fileID: 6337625182086449765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,8 +177,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7628810030053642955}
-  m_Layer: 0
-  m_Name: 1
+  m_Layer: 6
+  m_Name: 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,8 +192,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007047011203712141}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.553, y: -0.772, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.311265, y: 3.539, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 5229868429100475635}
   - component: {fileID: 3986014749893133275}
   - component: {fileID: 4425202082534864251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
