@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         respawnPoint = transform.position;
+        scoreTxt.text = "Score: " + Scoring.totalScore;
     }
 
     private void Update()
@@ -92,13 +93,11 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(1);
             respawnPoint = transform.position;
-            scoreTxt.text = "Score: " + Scoring.totalScore;
         }
         else if (collision.CompareTag("PreviosLevel"))
         {
             SceneManager.LoadScene(0);
             respawnPoint = transform.position;
-            scoreTxt.text = "Score: " + Scoring.totalScore;
         }
         else if (collision.CompareTag("Items"))
         {
